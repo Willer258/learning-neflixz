@@ -1,0 +1,14 @@
+{% block body %}
+    
+    <h1>{{movie.name}}</h1>
+    <p>{{movie.description}}</p>
+    <p>{{movie.timed}} min</p>
+
+   
+       <video width="320" height="240" controls>
+  <source src="{{movie.filePath}}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+   
+
+{% endblock %}
